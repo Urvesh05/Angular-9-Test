@@ -1,0 +1,424 @@
+
+
+<!-- <h1>hello gvp</h1> -->
+<h2>welcome to {{title}}</h2>
+
+<!-- <hr>
+
+<div>
+    This is templet of url view
+</div> -->
+
+<!--<app-test></app-test>-->
+
+<!-- <h2>this is componet example</h2>
+<button(click)= "btnclick()">click me Componet Directive </button> -->
+
+<!-- <div *ngIf="checkngif">This is ngif example strucral Directive </div>
+
+<p [ngStyle]="{'color':'green','font-weight': 'bold'}">this is attribute Directive using style and class< -->
+
+   <!-- <h2>Using ngIf with then and else</h2>
+   <input type="radio" name="radio1" (click)="changevalue(true)">true
+   <input type="radio" name="radio1" (click)="changevalue(false)">false -->
+   <!-- <input type="radio" name="radio2" (click)="changeValue(false)">False -->
+
+   <!-- <div *ngIf="isvalid ; else elseblock">
+       This is valid data
+    </div> -->
+
+    <!--using is else and then-->
+    <!-- <div *ngIf="isvalid ; then thenblock ; else elseblock"></div>
+        <ng-template #thenblock>
+
+            <div>This is valid data using then block</div>
+        </ng-template>
+        
+    <ng-template #elseblock>
+        <div>
+            This is invalid using with else block
+        </div>
+    </ng-template> -->
+
+    <!-- <div *ngIf="!isvalid">
+        This is Invalid data
+     </div> -->
+
+
+<!-- <h2>using ng swithcase</h2>
+
+<select (change)="setvalue($event)">
+    <option value="">select</option>
+    <option value="one">One</option>
+    <option value="two">two</option>
+    <option value="three">three</option>
+    <option value="another">default</option>
+</select>
+
+<div [ngSwitch]="choose">
+    <h3 *ngSwitchCase="'one'">First</h3>
+    <h3 *ngSwitchCase="'two'">Second</h3>
+    <h3 *ngSwitchCase="'three'">Third</h3>
+    <h3 *ngSwitchDefault>Default</h3>
+</div> -->
+
+<!-- <h2>track by example for</h2>
+
+<table border="=1">
+    <tr *ngFor="let s of Student;let i=index;trackBy:trackbystudentId">
+        <td>{{i+1}}</td>
+        
+        <td>{{s.studentId}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.gender}}</td>
+            <td>{{s.age}}</td>
+    </tr>
+</table>
+<br/>
+<button (click)='getmoreStudent()'>Get more students</button> -->
+
+
+
+
+<!-- 
+<h2>using ngfor</h2>
+<ul>
+    <li *ngFor='let s of student;let i=index;let f=first;let l=last;let ev=even;let od=odd '>
+       {{i+1}} {{s.name}} {{f}} {{l}} {{ev}} {{od}}
+
+    </li>
+</ul> -->
+
+
+
+<!-- <h2>using trck by ngfor</h2>
+
+<table border="1">
+
+    <tr *ngFor="let s of Student;let i=index; trackBy:trackbyid" >
+        <td>{{i+1}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.gender}}</td>
+    </tr>
+</table>
+<br>
+<button (click)='getmoreStudent()'>Get More Data</button>
+ -->
+
+
+
+ <!-- <h2>using by Grouping </h2>
+<ul *ngFor="let group of countryDetails">
+
+    <li>{{group.counrty}} </li>
+<ul>
+    <li *ngFor="let person of group.people">
+        {{person.name}}
+    </li>
+</ul>
+</ul> -->
+
+
+<!-- 
+<h2>ngStyle Example</h2>
+
+<ul *ngFor="let person of people">
+    <li [ngStyle]="{'color': getcolor(person.country)}">
+        {{person.name}} - {{person.country}}
+    </li>
+</ul> -->
+
+
+
+<!-- 
+<h2>using ngClass as String,Arry and componer with method </h2>
+<p [ngClass]="['one two']">Using ng class with Strin example</p>
+<div *ngFor="let user of users" [ngClass]="'three four'">
+    {{user}}
+
+</div>
+
+<p [ngClass]="{'one':true,'three':false}">using ng class</p>
+
+<div [ngClass]="getcssclass('mode')">
+
+example using ngClass with Componet Method
+</div> -->
+
+
+<!-- <h2>using interpolation</h2>
+<h2> emp name :{{empFirstName+' '+empLastName}}</h2>
+<h2>{{a+b}}</h2>
+ -->
+
+<!--  
+ <h2>using property Binding</h2>
+ <span [innerHTML]='title'></span>
+ First name :<span [innerHTML]='firstName'></span>
+ <img [src]="'https://angular.io/assets/images/logos/angular/angular.svg'" [height]="200"> -->
+
+
+<!-- 
+<h2>using attributr binding</h2>
+<table [attr.border]="bod"  height="200" with="100">
+    <tr>
+        <td [attr.colspan]="cols">Student Details</td>
+    </tr>
+
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Class</td>
+    </tr>
+
+    <tr>
+        <td>100</td>
+        <td>Karan</td>
+        <td>10th</td>
+    </tr>
+</table> -->
+
+
+<!-- <h2>event binding </h2>
+<button (click)="showdatada()">click me</button>
+<button (click)="show()">Show</button> -->
+
+
+<!-- <h2>two way data binding</h2>
+Enter your name :<input [value]='data' (input)='data=$event.target.value'><br>
+ your name : {{data}}<br>
+
+  Enter second part: <input [(ngModel)]='data1'><br>
+ Enter data :{{data1}} -->
+
+
+ <!-- <h2>using pipe</h2>
+<table border="1">
+
+    <tr>
+        <td>emp code</td>
+        <td>emp name</td>
+    </tr>
+
+    <tr *ngFor="let employee of emp">
+        <td>{{employee.code}}</td>
+        <td>{{employee.name |uppercase}}</td>
+    </tr>
+</table> -->
+
+
+<!-- <h2>parameterized pipes</h2>
+<div>
+    {{dob}}<br>
+    medium:{{dob|date:"medium"|uppercase}}<br>
+    specific formate :{{dob|date:("dd-mm-yyyy")}}<br>
+    show time :{{dob|date:"mediumTime"}}<br>
+-->
+
+    <!--multipale paremeter -->
+    <!-- full Date: {{dob|date:"fullDate"|uppercase|lowercase}}<br>
+
+    salary:{{salary|currency:"USD":true}}
+</div> --> 
+
+
+<!-- <h2>pipe with string</h2>
+<h3>
+    {{name|uppercase}} 
+    {{position|lowercase }}
+</h3>
+
+<h4>{{work|titlecase}}</h4>
+
+
+<h3>slice example</h3>
+<h4>{{work|slice:5}}</h4>
+<h4>{{work|slice:2:6}}</h4> -->
+
+
+<!-- <h2>1.date pipe example </h2>
+<h3>{{currentdate}}</h3>
+<h3>{{currentdate|date:'shortDate'}}</h3>
+<h3>{{currentdate|date:'longDate'}}</h3>
+<h3>{{currentdate|date:'fullDate'}}</h3>
+
+
+<h2>2.using pipe percent</h2>
+<h3>{{mynumber|percent}}</h3>
+<h3>{{mynumber|percent:'2.4-8'}}</h3>
+
+<h2>3.using pipe number</h2>
+<h3>{{mynumber|number}}</h3>
+
+<h2>4.using pipe currency</h2>
+<h3>{{mynumber|currency}}</h3>
+<h3>{{mynumber|currency:'INR'}}</h3>
+ -->
+
+<!-- 
+<h2>jason pipe examle</h2>
+<div>
+    {{emloyees|json}}<br>
+    {{emloyees|slice:1:3|json}}
+</div> -->
+
+
+<!-- <h2>custone pipe</h2>
+<table border="1">
+
+    <tr *ngFor="let epm of employee">
+        <td>{{epm.code}}</td>
+        <td>{{epm.name|mypipe:epm.gender}}</td>
+        <td>{{epm.gender}}</td>
+        <td>{{epm.salary}}</td>
+
+    </tr>
+</table> -->
+
+
+<!-- <h2>Rounter Link Example </h2>
+<a [routerLink]="['/student']">student</a><br> -->
+<!-- <a [routerLink]="['/emplogin']">Emp Login</a><br> -->
+<!-- <a [routerLink]="['/pagenotfound']">PageNotFound</a><br>
+
+<button (click)="student()">show data</button> -->
+
+
+<!-- <h2>service mate </h2>
+<h2>{{text}}</h2>
+
+<table>
+    <tr *ngFor="let em of emp">
+
+        <td>emp code</td>{{em.empcode}}
+        <td>emp name</td>{{em.name}}
+    </tr>
+</table> -->
+
+
+<!-- <h2>usinng bootstart test</h2>
+<button class="btn btn-primary btn-lg">check bootstrap</button> -->
+
+
+<!-- 
+<div style="width:100%;">
+    <div style = "width:40%;float:left;border:solid 1px black;">  
+
+    <h2>Pipe Prectices </h2>
+        <table border=1>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Mobile No</th>
+
+            </tr>
+           
+            <tr *ngFor="let em of emp">
+                <td>{{em.id}}</td>
+                <td>{{em.name|uppercase|mypipe:em.gender}}</td>
+                <td>{{em.mo}}</td>
+            
+         </tr>   
+    </table><br>
+
+    <h2>{{title1|uppercase}}</h2>
+    <h2>Today Is :{{todaydate}}</h2><br>
+    <h2>Short Time :{{todaydate|date:'shortTime'}}</h2><br>
+    <h2>Date Show :{{todaydate|date:'d/M/y'}}</h2><br>
+
+    <h2>Multipal Peremeter :{{todaydate|date:"fullDate" |uppercase}}</h2><br>
+    <h2>salary :{{salary|currency:'USD':true}}</h2>
+    <h2>Decimal Number :{{decimalpipe|number}}</h2>
+</div>
+
+<div style = "width:40%;float:left;border:solid 1px rgb(129, 106, 106);">  
+     <h2>Name: {{name|uppercase}} - {{position|lowercase}}</h2>
+     <h2>salary :{{salary1|currency:'USD':true}}</h2>
+     <h2>slice Example</h2>
+     <h2>position :{{position|slice:2:6}}</h2><br>
+
+     <h2>persont pipe example </h2>
+    
+     <h2>percent :{{mynumber|percent:'2.4-8'}}</h2>
+    <h2>percent data : {{00.54565 | percent}}</h2>
+    <h2>salary India :{{salary1|currency:'INR'}}</h2>
+
+
+</div>
+
+<div style = "width:40%;float:left;border:solid 1px rgb(129, 106, 106);">  
+    <h1>Json Pipe Example </h1>
+    <h2>{{jsonvalue|json}}</h2>
+
+
+    <h1>ToggleDate Formate </h1>
+    
+    <button (click)="toggleFormat()">Toggle Format</button>
+    <p>Birth Day is :{{birthday|date:format}}</p>
+
+</div> -->
+
+
+
+<!--@Input  data example -->
+<!-- 
+<div>
+    <app-student [myinput]="inputvariable" (myoutput)="getdata($event)">
+
+        <!-- <button (click)="onClickMe()">Click me!</button>
+        {{clickMessage}} -->
+
+        <!-- <input #box
+        (keyup.enter)="update(box.value)"
+        (blur)="update(box.value)">
+  
+      <p>{{value}}</p>
+
+
+    </app-student>
+</div> -->
+
+
+<!-- 
+<!--parent to child data -->
+<!-- <h1>Parent Component</h1>
+<label>Parent Component</label>
+<input type="text" #pcomponent (keyup)="0"/>
+
+<p>Value of child component is: {{CData}} </p>
+
+<div><app-student [PData]="pcomponent.value" (childEvent)="CData=$event">
+
+</app-student></div> --> 
+
+<!-- 
+<h1>parent tochil  data transfer example3 </h1>
+Parent Data <input type="text" placeholder="enter her.. " #parentValue (keyup)="0"><br>
+<button (click)="submitParenData(parentValue)">Submit</button>
+
+<div>
+<app-student [PData]="value"> </app-student></div> -->
+
+
+
+<!-- <h1>Component life cycle:</h1>
+<input type ="text" #parentvalue>
+<button (click)="pavalue(parentvalue)">sumbit data</button><br>
+<button (click)="destroy()" class="btn btn-danger">On Destroy </button>
+
+<div>
+<app-student *ngIf=" com1Exits" [PData]="value">Hokk :{{value}}</app-student>
+</div>   -->
+
+
+
+
+<app-counter-parent></app-counter-parent>
+
+<app-parent-color></app-parent-color>
+
+<app-them-viewchild-templet></app-them-viewchild-templet>
+<div> 
+<router-outlet></router-outlet>
+</div>
